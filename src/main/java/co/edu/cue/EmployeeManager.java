@@ -15,7 +15,7 @@ public class EmployeeManager {
         employees.add(employee);
     }
 
-    public double calculateSumOfSalaries() {
+    public Double calculateSumOfSalaries() {
         return employees.stream()
                 .mapToDouble(Employee::calculateMonthlySalary)
                 .sum();
